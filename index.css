@@ -1,2 +1,107 @@
+/* some basic setups */
+
+* {
+  /* for all elements */
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  color: var(--headerColor);
+  padding: 0px 20px;
+}
+
+/* color theme and variables */
+:root {
+  --accentColor: #ad38698a;
+  --headerColor: #444444;
+  /* --headerColor: #313131; */
+  --paragraphColor: #626262;
+  --ease: all 0.4s ease;
+  --radius: 6px;
+}
+
+/* for all icons */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+}
+
+a {
+  color: var(--headerColor);
+  /* remove default underlining */
+  text-decoration: none;
+}
+
+/* to center elements */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* to group sections */
+section {
+  margin: 50px 0px;
+}
+
+/* for background images */
+.backgroundFix {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* to create total separation between elements */
+.flex-space-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* to create responsive in-line elements */
+.flex-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* for the scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accentColor);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--headerColor);
+}
+
+/* other styles */
+nav {
+  margin-top: 10px;
+}
+nav .logo {
+  font-size: 18px;
+  font-weight: bold;
 }
