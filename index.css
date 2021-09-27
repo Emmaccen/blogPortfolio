@@ -11,6 +11,7 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--headerColor);
   padding: 0px 20px;
+  background-color: #fffafa;
 }
 
 /* color theme and variables */
@@ -30,6 +31,14 @@ body {
   margin: 0px 3px;
 }
 
+/* to apply colors */
+.accentColor {
+  color: var(--accentColor);
+}
+.paragraph {
+  color: var(--paragraphColor);
+}
+
 a {
   color: var(--headerColor);
   /* remove default underlining */
@@ -45,7 +54,7 @@ a {
 
 /* to group sections */
 section {
-  margin: 50px 0px;
+  margin: 70px 0px;
 }
 
 /* for background images */
@@ -62,6 +71,13 @@ section {
   align-items: center;
 }
 
+/* to apply equal spacing between elements */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 /* to create responsive in-line elements */
 .flex-inline {
   display: flex;
@@ -69,7 +85,7 @@ section {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
@@ -98,10 +114,26 @@ section {
 }
 
 /* other styles */
+
+/* nav Section */
 nav {
   margin-top: 10px;
 }
 nav .logo {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* About Section */
+
+.aboutSection .aboutImg {
+  height: 400px;
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.aboutSection p {
+  font-weight: bold;
+  font-size: 18px;
 }
