@@ -79,14 +79,20 @@ section {
 }
 
 /* to create responsive in-line elements */
-.flex-inline {
+.flex-wrap {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .container {
   width: 85%;
   margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* for the scroll bar */
@@ -131,9 +137,4 @@ nav .logo {
   width: 70%;
   margin: auto;
   border-radius: 30px;
-}
-
-.aboutSection p {
-  font-weight: bold;
-  font-size: 18px;
 }
