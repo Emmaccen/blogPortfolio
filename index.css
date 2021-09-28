@@ -16,7 +16,7 @@ body {
 
 /* color theme and variables */
 :root {
-  --accentColor: #ad38698a;
+  --accentColor: #ad3869;
   --headerColor: #444444;
   /* --headerColor: #313131; */
   --paragraphColor: #626262;
@@ -72,10 +72,14 @@ section {
 }
 
 /* to apply equal spacing between elements */
-.grid {
+.grid,
+.grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* to create responsive in-line elements */
@@ -137,4 +141,11 @@ nav .logo {
   width: 70%;
   margin: auto;
   border-radius: 30px;
+}
+
+/* portfolio section */
+
+.portfolio-section .portfolio-image {
+  height: 400px;
+  width: 100%;
 }
