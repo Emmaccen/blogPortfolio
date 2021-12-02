@@ -54,7 +54,7 @@ a {
 
 /* to group sections */
 section {
-  margin: 70px 0px;
+  margin: 150px 0px;
 }
 
 /* for background images */
@@ -72,7 +72,7 @@ section {
 }
 
 /* to apply equal spacing between elements */
-.grid,
+.grid2,
 .grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -126,8 +126,8 @@ section {
 /* other styles */
 
 /* nav Section */
-nav {
-  margin-top: 10px;
+.padChild {
+  padding: 25px;
 }
 nav .logo {
   font-size: 18px;
@@ -137,15 +137,28 @@ nav .logo {
 /* About Section */
 
 .aboutSection .aboutImg {
-  height: 400px;
-  width: 70%;
-  margin: auto;
-  border-radius: 30px;
+  height: 350px;
+  width: 60%;
+  margin-left: auto;
+  /* border-radius: 30px; */
+}
+@media (max-width: 1000px) {
+  .aboutSection .aboutImg {
+    width: 80%;
+  }
+  @media (max-width: 800px) {
+    .aboutSection {
+      display: block;
+    }
+    .aboutSection .aboutImg {
+      display: none;
+    }
+  }
 }
 
 /* portfolio section */
 
 .portfolio-section .portfolio-image {
-  height: 400px;
+  height: 250px;
   width: 100%;
 }
