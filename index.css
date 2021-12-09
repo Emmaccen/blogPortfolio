@@ -4,6 +4,14 @@
   /* for all elements */
   box-sizing: border-box;
 }
+/* color theme and variables */
+:root {
+  --accentColor: #ad3869;
+  --headerColor: #444444;
+  --paragraphColor: #626262;
+  --ease: all 0.4s ease;
+  --radius: 6px;
+}
 
 body {
   margin: 0;
@@ -12,16 +20,6 @@ body {
   color: var(--headerColor);
   padding: 0px 20px;
   background-color: #fffafa;
-}
-
-/* color theme and variables */
-:root {
-  --accentColor: #ad3869;
-  --headerColor: #444444;
-  /* --headerColor: #313131; */
-  --paragraphColor: #626262;
-  --ease: all 0.4s ease;
-  --radius: 6px;
 }
 
 /* for all icons */
@@ -123,15 +121,22 @@ section {
   background: var(--headerColor);
 }
 
-/* other styles */
-
-/* nav Section */
 .padChild {
   padding: 25px;
 }
-nav .logo {
+
+/* other styles */
+
+/* nav Section */
+.topHeader .logo {
   font-size: 18px;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .topHeader .flex-space-btw {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* About Section */
@@ -140,7 +145,7 @@ nav .logo {
   height: 350px;
   width: 60%;
   margin-left: auto;
-  /* border-radius: 30px; */
+  border-radius: 30px;
 }
 @media (max-width: 1000px) {
   .aboutSection .aboutImg {
@@ -156,9 +161,27 @@ nav .logo {
   }
 }
 
-/* portfolio section */
+/* experience section */
+.experience-section .resume {
+  margin-top: 30px;
+  display: block;
+}
 
+/* portfolio section */
+.portfolio-section p {
+  font-size: 14px;
+}
 .portfolio-section .portfolio-image {
   height: 250px;
   width: 100%;
+}
+@media (max-width: 800px) {
+  .portfolio-section .grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 550px) {
+    .portfolio-section .grid3 {
+      grid-template-columns: 1fr;
+    }
+  }
 }
