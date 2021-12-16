@@ -50,7 +50,7 @@ a {
   align-items: center;
 }
 
-/* to group sections */
+/* to group sections and add margins*/
 section {
   margin: 150px 0px;
 }
@@ -73,10 +73,12 @@ section {
 .grid2,
 .grid3 {
   display: grid;
+  /* place in twos */
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 .grid3 {
+  /* place in three */
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -87,6 +89,7 @@ section {
   flex-wrap: wrap;
 }
 
+/* wrap around elements and space on both sides */
 .container {
   width: 85%;
   margin: auto;
@@ -97,14 +100,14 @@ section {
   font-size: 18px;
 }
 
-/* for the scroll bar */
+/* for a fancy scroll bar */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
 
-/* Track */
+/* scroll bar Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
@@ -116,7 +119,7 @@ section {
   border-radius: 10px;
 }
 
-/* Handle on hover */
+/* scroll bar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--headerColor);
 }
@@ -140,7 +143,6 @@ section {
 }
 
 /* About Section */
-
 .aboutSection .aboutImg {
   height: 350px;
   width: 60%;
